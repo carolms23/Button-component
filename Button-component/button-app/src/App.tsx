@@ -4,13 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/Button/button'
 import React from 'react'
+import MenuList from './components/Menu/menu'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Button className="button"/>
+      <MenuList items={["Colors", "Typography","Spaces","Buttons","Inputs","Grid"]}/>
+      <Button buttonList={["Default"]}/>
     </div>
      
   )
