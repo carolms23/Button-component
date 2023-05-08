@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
-export default function MenuList(props: { items: any[]; }) {
-  const items = props.items.map((item,index)=>{
-    return (
+function MenuList(props: { items: string[]; }) {
+  const items = props.items.map((item: string ,index: number)=>{
+    return(
         <li>
-            <a href={item.url}>{item.label}</a>
+            <a>{item}</a>
         </li>
-    )
-  })
+  )})
   return (
     <ul>
-        {items}
+       {items}
     </ul>
   );
 }
+
+export default MenuList;

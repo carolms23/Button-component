@@ -1,9 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/Button/button'
-import React from 'react'
 import MenuList from './components/Menu/menu'
 
 function App() {

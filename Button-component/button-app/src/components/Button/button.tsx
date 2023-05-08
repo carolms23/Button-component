@@ -1,11 +1,11 @@
-import { useState } from "react";
+
 import styles from "./Button.module.css";
 
-export default function Button(props: { buttonList: any[] }) {
+export default function Button(props: { buttonList: string[] }) {
   const buttonList = props.buttonList.map((button, index) => {
     return <button  key={index} className={styles.button}>
         {
-            button.label
+            button
         }
         </button>;
   });
