@@ -1,6 +1,5 @@
-@import-normalize; /* bring in normalize.css styles */
-
-
-img {
-  border-style: none;
+.main_container {
+  display: flex;
+  margin:3rem;
 }
+
